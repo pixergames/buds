@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+
+        <title>Clicker</title>
+
+
+    </head>
+
+
+    <body>
+
+        <div class="sectionLeft">
+            <div class="scoreContainer unselectable">
+                <span id="score">0</span> weedcrumbs
+                <br>
+                <span id="scorepersecond">0</span> weedcrumbs per seconds
+            </div>
+                <br> 
+                <div class="clickerContainer" unselectable>
+                    <img src="images/bud2.png" height="256px" width="256px" onclick="addToScore(clickingPower)">
+                </div>        
+                <button onclick="saveGame()">Save Game</button>
+        </div>
+        
+        <div class="sectionRight">
+
+            <table class="shopButton unselectable" onclick="buyBudbee()">
+                <tr>
+                    <td id="image"><img src="images/bee.png"></td>
+                    <td id="nameAndCost">
+                        <p>Budbee</p>
+                        <br>
+                        <p><span id="budbeecost">20</span> wc</p>
+                    </td>
+                    <td id="amount"><span id="budbees">0</span></td>
+                </tr>
+            </table>
+
+            <table class="shopButton unselectable" onclick="buyPothog()">
+            <tr>
+                <td id="image"><img src="images/hog.png" height="64px" width="64px"></td>
+                <td id="nameAndCost">
+                    <p>Pothog</p>
+                    <br>
+                    <p><span id="pothogcost">100</span> wc</p>
+                </td>
+                <td id="amount"><span id="pothogs">0</span></td>
+            </tr>
+        </table>
+
+        <table class="shopButton unselectable" onclick="buyPuffin()">
+            <tr>
+                <td id="image"><img src="images/puffin.png" height="64px" width="64px"></td>
+                <td id="nameAndCost">
+                    <p>Puffin</p>
+                    <br>
+                    <p><span id="puffincost">500</span> wc</p>
+                </td>
+                <td id="amount"><span id="puffins">0</span></td>
+            </tr>
+        </table>
+
+        </div>    
+
+    </body>
+
+
+</html>
